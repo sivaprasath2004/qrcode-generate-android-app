@@ -1,0 +1,1 @@
+# qrcode-generate-android-app
