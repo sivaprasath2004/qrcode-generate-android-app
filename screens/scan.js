@@ -5,7 +5,7 @@ import { Camera } from 'expo-camera';
 export default function Scan() {
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
-
+  const [checkers,setCheckers]=useState({data:undefined})
   useEffect(() => {
     const getCameraPermissions = async () => {
       const { status } = await Camera.requestCameraPermissionsAsync()
@@ -17,7 +17,9 @@ export default function Scan() {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
+    setCheckers(pre=>({...pre,data:data}))
     alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+
   };
 
   if (hasPermission === null) {
@@ -28,22 +30,24 @@ export default function Scan() {
   }
 
   return (
-    <View style={styles.container}>
+    <>
+    <View style={{height:300,width:300,backgroundColor:'cyan',marginTop:-100,justifyContent:'center',alignItems:'center'}}>
       <StatusBar barStyle='white' backgroundColor='black' />
-      <Text style={{fontSize:30,fontWeight:900,paddingLeft:10,color:'white',marginTop:20}}>Hello</Text>
       <View style={{height:'100%',justifyContent:'center',alignItems:'center',width:'100%'}}>
       <Camera
         onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
       />
-      {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
-      </View>
+      {scanned && <Button title={'Tap to Scan Again'} onPress={() => {
+        setScanned(false)
+        setCheckers(pre=>({...pre,data:undefined}))
+      }} />}
     </View>
+    </View>
+    <View>
+      
+    </View>
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    height:'100%',width:'100%',backgroundColor:'black'
-  },
-});
