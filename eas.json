@@ -1,0 +1,29 @@
+{
+  "build": {
+    "preview": {
+      "android": {
+        "buildType": "apk",
+        "buildConfig": {
+          "enableProguard": true,
+          "useAppBundles": true 
+        }
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease",
+        "buildConfig": {
+          "enableProguard": true,
+          "useAppBundles": true
+        }
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "preview4": {
+      "distribution": "internal"
+    },
+    "production": {}
+  }
+}

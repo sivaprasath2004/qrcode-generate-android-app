@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "qrcode",
-    "slug": "qrcode",
+    "name": "Code Craft",
+    "slug": "code-craft",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hiisiva.codecraft"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e5ed54f5-0f6b-4905-949e-ef6b383ea608"
+      }
+    },
+    "owner": "hiisiva"
   }
 }
