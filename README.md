@@ -1,7 +1,12 @@
-# Code Craft
+# Code Craft <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px">&nbsp;
 
 Code Craft is a free and open-source Android application built using React Native & Expo stack. This application allows users to scan QR codes and generate QR codes easily.
 
+|Generator|Scan|ReScan|
+|:-:|:-:|:-:|
+|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/900799e2-ad7c-4059-97fa-180263bea650)|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/1cc2c845-2f25-4dbe-8e54-2ef2c4837b41)|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/c3619d86-692e-476f-ad84-523ec6ba31ee)|
+|About|Contact|Support|
+|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/98c8e566-da76-4723-9a6f-bee86efc8b0c)|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/a5b8d50d-706c-4270-a590-64fb46479da1)|![](https://github.com/sivaprasath2004/qrcode-generate-android-app/assets/121082414/d2023742-9ebe-46a0-861e-d23367c28d9f)|
 ## Features
 
 - **QR Code Scanner**: Scan QR codes quickly and easily.
@@ -35,6 +40,8 @@ Code Craft is a free and open-source Android application built using React Nativ
 
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
+
 ## Contact
+
 
 For any inquiries or support, please contact [Sivaprasath](mailto:prasathsiva2004@gmail.com)
